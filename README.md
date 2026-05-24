@@ -10,6 +10,7 @@ https://alibaba.github.io/Alibaba-Java-Coding-Guidelines/
 
 - `SKILL.md`：skill 入口，包含触发条件、工作流程和使用原则。
 - `references/alibaba-java-rules.md`：阿里巴巴 Java 编码规范的中文摘要。
+- `skills/alibaba-java-coding-guidelines-skill/`：面向要求 `skills/` 根目录结构的注册表镜像。
 - `scripts/validate_skill.py`：Python 校验入口。
 - `scripts/validate_skill.mjs`：Node.js 校验入口。
 - `scripts/validate_skill.go`：Go 校验入口。
