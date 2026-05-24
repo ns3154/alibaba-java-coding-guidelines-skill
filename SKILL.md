@@ -1,6 +1,6 @@
 ---
 name: alibaba-java-coding-guidelines-skill
-description: 当需要调用阿里巴巴 Java 编码规范 skill 来审查、生成或重构 Java、Spring、MyBatis、MySQL、日志、异常、安全相关代码时使用。
+description: Use when 需要按 Alibaba Java Coding Guidelines（阿里巴巴 Java 编码规范）审查、生成或重构 Java、Spring、MyBatis、Maven、MySQL、SQL、日志、异常、安全或数据库相关代码。
 ---
 
 # 阿里巴巴 Java 开发规约
@@ -10,6 +10,12 @@ description: 当需要调用阿里巴巴 Java 编码规范 skill 来审查、生
 使用本 skill 时，把《阿里巴巴 Java 开发手册》当作 Java 代码生成、重构和审查的默认质量基线。优先处理强制规则，再处理推荐规则；如果项目本地约定和规约冲突，说明冲突点并以用户或项目约定为准。
 
 详细规则摘要见 `references/alibaba-java-rules.md`。需要精确出处或完整条文时，打开官方页面：`https://alibaba.github.io/Alibaba-Java-Coding-Guidelines/`。
+
+## 兼容性
+
+这是通用 Agent Skill，不绑定单个应用或运行器。Claude Code、Codex 以及其他支持 Agent Skills 目录规范的工具都应只依赖 `SKILL.md` 和按需读取的 `references/` 内容。
+
+`agents/openai.yaml` 只是 OpenAI/Codex UI 元数据，属于可选增强；不应作为 Claude Code 或其他 agent 使用本 skill 的前提。
 
 ## 使用场景
 
@@ -56,4 +62,5 @@ description: 当需要调用阿里巴巴 Java 编码规范 skill 来审查、生
 - 不要只检查格式；命名、空值、异常边界、日志上下文、事务、SQL 注入和权限校验同样重要。
 - 不要把推荐规则包装成强制缺陷；推荐项要讲清收益和代价。
 - 不要为了规约牺牲项目一致性；本地架构分层、包名和框架约束要先看再改。
+- 不要依赖某个 agent 产品的专属工具、路径或配置；只把它们作为可选增强。
 - 不要大段复述官方文档；只加载和任务相关的规则摘要。
