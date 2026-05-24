@@ -17,6 +17,8 @@ description: Use when 需要按 Alibaba Java Coding Guidelines（阿里巴巴 Ja
 
 `agents/openai.yaml` 只是 OpenAI/Codex UI 元数据，属于可选增强；不应作为 Claude Code 或其他 agent 使用本 skill 的前提。
 
+校验入口提供 Python、Node.js、Go 三种等价实现：`scripts/validate_skill.py`、`scripts/validate_skill.mjs`、`scripts/validate_skill.go`。使用者可以按本地运行时任选其一；需要验证三者一致时运行 `tests/test_validators.sh`。
+
 ## 使用场景
 
 - 审查 Java、Spring、MyBatis、Maven、SQL、DDL、日志、异常处理或安全相关改动。
