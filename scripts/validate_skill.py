@@ -25,7 +25,7 @@ def main() -> None:
     skill_text = skill.read_text(encoding="utf-8")
     if not skill_text.startswith("---\n"):
         fail("SKILL.md 缺少 YAML frontmatter")
-    if "name: alibaba-java-coding-guidelines" not in skill_text:
+    if "name: alibaba-java-coding-guidelines-skill" not in skill_text:
         fail("SKILL.md 的 skill 名称不正确")
     if "description:" not in skill_text:
         fail("SKILL.md 缺少 description")

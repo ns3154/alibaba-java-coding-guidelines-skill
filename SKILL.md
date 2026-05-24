@@ -1,6 +1,6 @@
 ---
-name: alibaba-java-coding-guidelines
-description: 当需要按《阿里巴巴 Java 开发手册》审查、生成或重构 Java、Spring、MyBatis、MySQL、日志、异常、安全相关代码时使用。
+name: alibaba-java-coding-guidelines-skill
+description: 当需要调用阿里巴巴 Java 编码规范 skill 来审查、生成或重构 Java、Spring、MyBatis、MySQL、日志、异常、安全相关代码时使用。
 ---
 
 # 阿里巴巴 Java 开发规约
