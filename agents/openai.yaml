@@ -1,0 +1,7 @@
+interface:
+  display_name: "阿里 Java 规约"
+  short_description: "按阿里 Java 规范审查和生成代码"
+  default_prompt: "使用 $alibaba-java-coding-guidelines 按阿里巴巴 Java 开发规约审查这次 Java 改动。"
+
+policy:
+  allow_implicit_invocation: true
